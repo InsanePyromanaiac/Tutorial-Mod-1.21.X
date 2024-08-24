@@ -1,8 +1,8 @@
 {
   "type": "minecraft:blasting",
   "category": "misc",
-  "cookingtime": 10,
-  "experience": 100,
+  "cookingtime": 50,
+  "experience": 1,
   "group": "pink_garnet",
   "ingredient": {
     "item": "tutorialmod:raw_pink_garnet"

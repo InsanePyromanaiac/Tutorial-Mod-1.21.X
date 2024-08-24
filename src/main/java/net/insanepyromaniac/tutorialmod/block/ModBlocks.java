@@ -7,6 +7,7 @@ import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.PickaxeItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
@@ -22,6 +23,14 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(4f)
                     .requiresTool()
                     .sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block PINK_GARNET_ORE = registerBlock("pink_garnet_ore",
+            new Block(AbstractBlock.Settings.create().strength(4f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.LARGE_AMETHYST_BUD)));
+    public static final Block DEEPSLATE_PINK_GARNET_ORE = registerBlock("pink_garnet_deepslate_ore",
+            new Block(AbstractBlock.Settings.create().strength(4f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.LARGE_AMETHYST_BUD)));
 
     private static Block registerBlock(String name,Block block){
         registerBlockItem(name, block);
@@ -38,6 +47,8 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(PINK_GARNET_BLOCK);
             entries.add(RAW_PINK_GARNET_BLOCK);
+            entries.add(PINK_GARNET_ORE);
+            entries.add(DEEPSLATE_PINK_GARNET_ORE);
         });
     }
 }

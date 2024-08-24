@@ -5,7 +5,7 @@
   "experience": 0.7,
   "group": "pink_garnet",
   "ingredient": {
-    "item": "tutorialmod:raw_pink_garnet"
+    "item": "tutorialmod:pink_garnet_deepslate_ore"
   },
   "result": {
     "id": "tutorialmod:pink_garnet"

@@ -18,6 +18,8 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.PINK_GARNET_BLOCK);
                         entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
+                        entries.add(ModBlocks.PINK_GARNET_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_PINK_GARNET_ORE);
                     }).build());
     public static final ItemGroup PINK_GARNET_ITEM_Group = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(TutorialMod.ModID,"pink_garnet_items"),
